@@ -1,0 +1,48 @@
+.box {
+    text-align: center;
+
+    width: 300px;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: lightblue;
+}
+
+
+.container {
+    display: flex;
+
+    border: 15px solid red;
+    padding: 10px;
+    margin: 10px
+}
+
+.text-container {
+    width: auto;
+
+    border: 15px solid red;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.text-container>span {
+    border: 15px solid rgb(94, 255, 0);
+    position: relative;
+
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+@keyframes example {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

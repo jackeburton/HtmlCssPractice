@@ -1,0 +1,109 @@
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 103px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 330px;
+}
+
+li {
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    font-weight: 400;
+    margin-right: 30px;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 150px;
+}
+
+.nav-top-level {
+    height: 103px;
+}
+
+.sign-in-link::before {
+    font: var(--fa-font-solid);
+    content: "\f007";
+
+
+    padding: 4px;
+}
+
+.shop-link::before {
+    font: var(--fa-font-solid);
+    content: "\f290";
+
+    padding: 4px;
+}
+
+.shop-link {
+    font-weight: bold;
+}
+
+.donate-link {
+    color: white;
+
+    font-weight: bold;
+    display: inline-block;
+}
+
+.donate-link::before {
+    font: var(--fa-font-solid);
+    content: "\f004";
+
+
+
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.donate-text {
+    width: 100%;
+    height: 100%;
+}
+
+.donate-card {
+    background-color: #d62021;
+    height: 32px;
+    justify-content: center;
+
+    align-items: center;
+    display: flex;
+    padding-right: 11px;
+    border-radius: 2px;
+}
+
+.sign-in-card {
+    margin-left: auto;
+}
+
+
+/* Step 1: Common Properties
+  These styles are required to make icons render reliably */
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
