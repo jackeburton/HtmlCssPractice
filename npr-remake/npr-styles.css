@@ -8,11 +8,20 @@ body {
     margin: 0;
 }
 
+.nav-top-level>ul {
+    height: 103px;
+}
+
+.nav-bottom-level>ul {
+    height: 50px;
+    background-color: #4a4a4a;
+}
+
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    height: 103px;
 
     display: flex;
     align-items: center;
@@ -21,12 +30,24 @@ ul {
 }
 
 li {
-    font-size: 14px;
-    color: rgb(74, 74, 74);
     font-weight: 400;
     margin-right: 30px;
+    font-size: 14px;
+}
+
+.nav-top-level>ul>li {
+    color: rgb(74, 74, 74);
 
 
+
+}
+
+.nav-bottom-level>ul>li {
+    color: #FFFFFF;
+}
+
+.nav-bottom-level>ul>li>a:hover {
+    color: #a0a0a0;
 }
 
 
@@ -62,6 +83,15 @@ img {
     font-weight: bold;
 }
 
+.sign-in-link:hover {
+
+    color: #9a9a9a;
+}
+
+.shop-link:hover {
+    color: #9a9a9a;
+}
+
 .donate-link {
     color: white;
 
@@ -72,9 +102,6 @@ img {
 .donate-link::before {
     font: var(--fa-font-solid);
     content: "\f004";
-
-
-
     padding: 4px;
     padding-left: 10px;
 }
@@ -97,6 +124,41 @@ img {
 
 .sign-in-card {
     margin-left: auto;
+}
+
+.news-hover::before {
+    font: var(--fa-font-solid);
+    content: "\f1ea";
+
+    padding: 4px;
+}
+
+.culture-hover::before {
+    font: var(--fa-font-solid);
+    content: "\f554";
+
+    padding: 4px;
+}
+
+.music-hover::before {
+    font: var(--fa-font-solid);
+    content: "\f001";
+
+    padding: 4px;
+}
+
+.podcast-hover::before {
+    font: var(--fa-font-solid);
+    content: "\f025";
+
+    padding: 4px;
+}
+
+.search-hover::before {
+    font: var(--fa-font-solid);
+    content: "\f002";
+
+    padding: 4px;
 }
 
 
